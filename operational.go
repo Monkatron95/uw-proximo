@@ -47,7 +47,7 @@ func startOperationalServer(port int, opStatus *op.Status) {
 	}()
 }
 
-// newServerOpChecker returns a health checker that checks the health status of the gRPC server
+// newServerOpChecker returns a health checker that checks the health status of the gRPC server.
 func newServerOpChecker(addr string) func(*op.CheckResponse) {
 	var (
 		unhealthyAction = "check grpc server is healthy"
