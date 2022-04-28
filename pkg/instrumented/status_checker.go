@@ -128,7 +128,7 @@ func (cs *statusChecker) checkStatus() checkResult {
 		}, nil
 	})
 
-	return result.(checkResult)
+	return result.(checkResult) // nolint:forcetypeassert
 }
 
 func (cs *statusChecker) incFailedForConn(c *statusConnection) {

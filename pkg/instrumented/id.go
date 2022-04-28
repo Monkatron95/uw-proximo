@@ -7,8 +7,7 @@ import (
 
 func generateID() string {
 	random := []byte{0, 0, 0, 0, 0, 0, 0, 0}
-	_, err := rand.Read(random)
-	if err != nil {
+	if _, err := rand.Read(random); err != nil {
 		panic(err)
 	}
 	return hex.EncodeToString(random)
