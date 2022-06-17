@@ -1,4 +1,4 @@
-# uw-proximo [![Docker Repository on Quay](https://quay.io/repository/utilitywarehouse/uw-proximo/status "Docker Repository on Quay")](https://quay.io/repository/utilitywarehouse/uw-proximo) [![CircleCI](https://circleci.com/gh/utilitywarehouse/uw-proximo.svg?style=svg)](https://circleci.com/gh/utilitywarehouse/uw-proximo)
+# uw-proximo [![CircleCI](https://circleci.com/gh/utilitywarehouse/uw-proximo.svg?style=svg)](https://circleci.com/gh/utilitywarehouse/uw-proximo)
 Utility Warehouse specific version of https://github.com/uw-labs/proximo.
 This version exposes prometheus metrics endpoint at `/__/metrics` on port 8080 
 (can be configured via probe-port option) and health check endpoint that checks health of the gRPC server and 
